@@ -29,11 +29,7 @@ function quickSort(nums) {
     }
   }
 
-  return [
-    ...quickSort(left),
-    pivot,
-    ...quickSort(right),
-  ];
+  return [...quickSort(left), pivot, ...quickSort(right)];
 }
 
 // unit tests
